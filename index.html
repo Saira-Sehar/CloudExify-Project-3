@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DentAlign - Premium Dental Care. Your smile, perfectly aligned. Book your appointment today.">
+    <title>DentAlign | Premium Dental Care</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Emergency Button -->
+    <a href="#emergency" class="emergency-float" data-bs-toggle="modal" data-bs-target="#emergencyModal">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <span>Emergency</span>
+    </a>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Dent<span class="brand-accent">Align</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#calculator">Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-book ms-2" href="#booking">Book Now</a></li>
+                    <li class="nav-item ms-2">
+                        <button class="theme-toggle-nav" id="themeToggleNav" aria-label="Toggle theme">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link admin-link" href="login.html" title="Admin Login">
+                            <i class="bi bi-shield-lock"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content">
+                    <span class="hero-badge">⭐ 4.9 Rating | 5000+ Smiles Transformed</span>
+                    <h1 class="hero-title">Your Smile,<br><span class="hero-highlight">Perfectly Aligned</span></h1>
+                    <p class="hero-description">Experience world-class dental care with cutting-edge technology and a gentle touch. Your comfort is our priority.</p>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="stat-number counter" data-target="15">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="stat-number counter" data-target="5000">0</span>
+                            <span class="stat-label">Happy Patients</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="stat-number counter" data-target="4.9" data-decimal="1">0</span>
+                            <span class="stat-label">Patient Rating</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="stat-number counter" data-target="25">0</span>
+                            <span class="stat-label">Expert Dentists</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn btn-primary-custom btn-lg">Book Appointment <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="tel:+923001234567" class="btn btn-outline-custom btn-lg"><i class="bi bi-telephone-fill me-2"></i> Emergency Call</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-col">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-shape"></div>
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=700&fit=crop" alt="Dental Care" class="hero-main-image">
+                        <div class="hero-floating-card">
+                            <div class="floating-icon"><i class="bi bi-check-circle-fill"></i></div>
+                            <div><strong>Open Now</strong><p>Mon - Sat: 9 AM - 8 PM</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Comprehensive <span class="brand-accent">Dental Care</span></h2>
+                <p class="section-description">From routine checkups to advanced cosmetic procedures — we do it all.</p>
+            </div>
+            <div class="service-filter-bar">
+                <button class="service-filter-btn active" data-filter="all">All Services</button>
+                <button class="service-filter-btn" data-filter="general">General</button>
+                <button class="service-filter-btn" data-filter="cosmetic">Cosmetic</button>
+                <button class="service-filter-btn" data-filter="orthodontics">Orthodontics</button>
+                <button class="service-filter-btn" data-filter="emergency">Emergency</button>
+            </div>
+            <div class="row g-4" id="servicesGrid">
+                <div class="col-md-4 col-sm-6 service-item" data-category="general">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-heart-pulse"></i></div>
+                        <h3>General Dentistry</h3>
+                        <p>Routine checkups, cleanings, fillings, and preventive care for your overall oral health.</p>
+                        <a href="#booking" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 service-item" data-category="cosmetic">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-stars"></i></div>
+                        <h3>Cosmetic Dentistry</h3>
+                        <p>Teeth whitening, veneers, and smile makeovers to give you the confidence you deserve.</p>
+                        <a href="#booking" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 service-item" data-category="orthodontics">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+                        <h3>Orthodontics</h3>
+                        <p>Braces, Invisalign, and alignment treatments for a perfectly straight smile.</p>
+                        <a href="#booking" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 service-item" data-category="emergency">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-shield-exclamation"></i></div>
+                        <h3>Emergency Care</h3>
+                        <p>Same-day emergency appointments for toothaches, broken teeth, and dental trauma.</p>
+                        <a href="#booking" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 service-item" data-category="general">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-emoji-smile"></i></div>
+                        <h3>Pediatric Dentistry</h3>
+                        <p>Gentle, child-friendly dental care in a warm and welcoming environment.</p>
+                        <a href="#booking" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 service-item" data-category="cosmetic">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-hospital"></i></div>
+                        <h3>Oral Surgery</h3>
+                        <p>Wisdom teeth removal, implants, and advanced surgical procedures with expert care.</p>
+                        <a href="#booking" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <span class="section-subtitle">About Us</span>
+                        <h2 class="section-title">Your Trusted <span class="brand-accent">Dental Partner</span></h2>
+                    </div>
+                    <div class="about-content">
+                        <p>DentAlign was founded in 2011 with a simple mission: to provide world-class dental care in a comfortable, anxiety-free environment. Over the past 15 years, we've helped over 5,000 patients achieve healthy, beautiful smiles.</p>
+                        <p>Our clinic combines cutting-edge technology with a gentle, patient-first approach. From digital X-rays to painless laser treatments, we invest in the latest equipment to ensure the best possible outcomes for our patients.</p>
+                        <div class="about-values">
+                            <div class="value-item"><i class="bi bi-check-circle-fill"></i><span>Certified & Experienced Specialists</span></div>
+                            <div class="value-item"><i class="bi bi-check-circle-fill"></i><span>State-of-the-Art Equipment</span></div>
+                            <div class="value-item"><i class="bi bi-check-circle-fill"></i><span>Painless Treatment Techniques</span></div>
+                            <div class="value-item"><i class="bi bi-check-circle-fill"></i><span>Affordable Payment Plans</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&h=450&fit=crop" alt="DentAlign Clinic" class="about-main-image">
+                        <div class="about-experience-badge">
+                            <span class="exp-number">15+</span>
+                            <span class="exp-label">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DOCTORS ========== -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Our Team</span>
+                <h2 class="section-title">Meet Our <span class="brand-accent">Specialists</span></h2>
+                <p class="section-description">Highly qualified dental professionals dedicated to your care.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop" alt="Dr. Sarah Ahmed">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Ahmed</h3>
+                            <p class="doctor-specialty">Chief Dental Surgeon</p>
+                            <p class="doctor-exp">BDS, FCPS • 15+ Years Experience</p>
+                            <div class="doctor-rating">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <span>5.0</span>
+                            </div>
+                            <p class="doctor-bio">Specializing in cosmetic dentistry and complex oral surgeries. Trained at Aga Khan University Hospital.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop" alt="Dr. Imran Khan">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Imran Khan</h3>
+                            <p class="doctor-specialty">Orthodontic Specialist</p>
+                            <p class="doctor-exp">BDS, MDS Ortho • 10+ Years Experience</p>
+                            <div class="doctor-rating">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <span>4.9</span>
+                            </div>
+                            <p class="doctor-bio">Expert in Invisalign and traditional braces. Helped 2000+ patients achieve perfect smiles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop" alt="Dr. Ayesha Malik">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Ayesha Malik</h3>
+                            <p class="doctor-specialty">Pediatric Dentist</p>
+                            <p class="doctor-exp">BDS, MCPS • 8+ Years Experience</p>
+                            <div class="doctor-rating">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                <span>4.8</span>
+                            </div>
+                            <p class="doctor-bio">Specialized in child-friendly dental care. Creates a fun, anxiety-free experience for young patients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Pricing</span>
+                <h2 class="section-title">Transparent <span class="brand-accent">Plans</span></h2>
+                <p class="section-description">Choose the plan that fits your dental care needs.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <h3 class="pricing-name">Basic</h3>
+                        <p class="pricing-desc">Essential dental care for individuals</p>
+                        <div class="pricing-price">
+                            <span class="price-currency">₨</span>
+                            <span class="price-amount">5,000</span>
+                            <span class="price-period">/visit</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> General Checkup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Teeth Cleaning</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Digital X-Ray</li>
+                            <li><i class="bi bi-x-circle text-muted"></i> Whitening</li>
+                            <li><i class="bi bi-x-circle text-muted"></i> Orthodontics</li>
+                            <li><i class="bi bi-x-circle text-muted"></i> Emergency Priority</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline-custom btn-lg w-100">Choose Basic</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card featured">
+                        <span class="featured-badge">Most Popular</span>
+                        <h3 class="pricing-name">Standard</h3>
+                        <p class="pricing-desc">Complete care for families</p>
+                        <div class="pricing-price">
+                            <span class="price-currency">₨</span>
+                            <span class="price-amount">12,000</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> General Checkup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Teeth Cleaning (2x)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Digital X-Ray</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Basic Whitening</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Orthodontic Consultation</li>
+                            <li><i class="bi bi-x-circle text-muted"></i> Emergency Priority</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-primary-custom btn-lg w-100">Choose Standard</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <h3 class="pricing-name">Premium</h3>
+                        <p class="pricing-desc">Full coverage for peace of mind</p>
+                        <div class="pricing-price">
+                            <span class="price-currency">₨</span>
+                            <span class="price-amount">25,000</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Unlimited Checkups</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Teeth Cleaning (4x)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Full X-Ray Suite</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Professional Whitening</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Full Orthodontics</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 24/7 Emergency Priority</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline-custom btn-lg w-100">Choose Premium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CALCULATOR ========== -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <span class="section-subtitle">Pricing</span>
+                        <h2 class="section-title">Treatment <span class="brand-accent">Cost Estimator</span></h2>
+                        <p class="section-description">Get an instant estimate for your dental treatment. Transparent pricing, no hidden fees.</p>
+                    </div>
+                    <div class="calculator-form">
+                        <div class="mb-3">
+                            <label class="form-label">Select Treatment</label>
+                            <select class="form-select" id="treatmentSelect">
+                                <option value="">Choose a treatment...</option>
+                                <option value="checkup">General Checkup & Cleaning</option>
+                                <option value="filling">Dental Filling</option>
+                                <option value="whitening">Teeth Whitening</option>
+                                <option value="veneer">Dental Veneers (per tooth)</option>
+                                <option value="braces">Orthodontic Braces</option>
+                                <option value="implant">Dental Implant</option>
+                                <option value="rootcanal">Root Canal Treatment</option>
+                                <option value="extraction">Tooth Extraction</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Complexity Level</label>
+                            <div class="complexity-buttons">
+                                <input type="radio" name="complexity" id="simple" value="simple" class="btn-check">
+                                <label for="simple" class="btn btn-outline-custom">Simple</label>
+                                <input type="radio" name="complexity" id="moderate" value="moderate" class="btn-check">
+                                <label for="moderate" class="btn btn-outline-custom">Moderate</label>
+                                <input type="radio" name="complexity" id="complex" value="complex" class="btn-check">
+                                <label for="complex" class="btn btn-outline-custom">Complex</label>
+                            </div>
+                        </div>
+                        <div class="calculator-result">
+                            <div class="result-card">
+                                <span class="result-label">Estimated Cost</span>
+                                <span class="result-amount" id="estimatedCost">₨ 0</span>
+                                <span class="result-note">*Final cost may vary based on consultation</span>
+                            </div>
+                        </div>
+                        <a href="#booking" class="btn btn-primary-custom btn-lg w-100 mt-3">Book Consultation <i class="bi bi-calendar-check ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="calculator-info">
+                        <h3>Why Choose DentAlign?</h3>
+                        <div class="info-list">
+                            <div class="info-item"><i class="bi bi-check-circle-fill"></i><div><strong>Transparent Pricing</strong><p>No hidden charges. You know the cost before treatment.</p></div></div>
+                            <div class="info-item"><i class="bi bi-check-circle-fill"></i><div><strong>Insurance Accepted</strong><p>We work with all major insurance providers.</p></div></div>
+                            <div class="info-item"><i class="bi bi-check-circle-fill"></i><div><strong>Flexible Payment Plans</strong><p>Easy installment options for major treatments.</p></div></div>
+                            <div class="info-item"><i class="bi bi-check-circle-fill"></i><div><strong>Free Consultation</strong><p>First consultation and X-ray absolutely free.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+<!-- ========== GALLERY ========== -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-subtitle">Our Work</span>
+            <h2 class="section-title">Before & After <span class="brand-accent">Gallery</span></h2>
+            <p class="section-description">Real results from real patients. See the transformations for yourself.</p>
+        </div>
+        
+        <!-- Main Image Display -->
+        <div class="gallery-main-display">
+            <div class="gallery-main-image-wrapper">
+                <img src="assets/images/gallery-main.jpg" alt="Dental Transformation">
+                <div class="gallery-main-overlay">
+                    <span>View Full Gallery Below</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gallery filters with correct categories -->
+        <div class="gallery-filters mt-4">
+            <button class="gallery-filter active" data-filter="all">All</button>
+            <button class="gallery-filter" data-filter="whitening">Whitening</button>
+            <button class="gallery-filter" data-filter="veneers">Veneers</button>
+            <button class="gallery-filter" data-filter="braces">Braces</button>
+            <button class="gallery-filter" data-filter="implants">Dental Implants</button>
+            <button class="gallery-filter" data-filter="cavity-gums">Cavity & Gums</button>
+        </div>
+        
+        <!-- Gallery Grid with 5 Comparison Images -->
+        <div class="row g-3 mt-2" id="galleryGrid">
+            
+            <!-- Whitening Before/After -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="whitening">
+                <div class="gallery-card comparison-image-card" onclick="openFullscreen(this)">
+                    <img src="assets/images/whitening-before-after.jpg" alt="Teeth Whitening Before and After">
+                    <div class="gallery-overlay">
+                        <span>Teeth Whitening</span>
+                        <p>8 shades brighter in 1 session</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Veneers Before/After -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="veneers">
+                <div class="gallery-card comparison-image-card" onclick="openFullscreen(this)">
+                    <img src="assets/images/veneers-before-after.jpg" alt="Porcelain Veneers Before and After">
+                    <div class="gallery-overlay">
+                        <span>Porcelain Veneers</span>
+                        <p>Complete smile makeover</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Braces Before/After -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="braces">
+                <div class="gallery-card comparison-image-card" onclick="openFullscreen(this)">
+                    <img src="assets/images/braces-before-after.jpg" alt="Orthodontic Braces Before and After">
+                    <div class="gallery-overlay">
+                        <span>Orthodontic Braces</span>
+                        <p>18 months transformation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dental Implants Before/After -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="implants">
+                <div class="gallery-card comparison-image-card" onclick="openFullscreen(this)">
+                    <img src="assets/images/implant-before-after.jpg" alt="Dental Implant Before and After">
+                    <div class="gallery-overlay">
+                        <span>Dental Implant</span>
+                        <p>Missing tooth replaced</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cavity & Gums Before/After -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="cavity-gums">
+                <div class="gallery-card comparison-image-card" onclick="openFullscreen(this)">
+                    <img src="assets/images/cavity-gums-before-after.jpg" alt="Cavity and Gums Treatment Before and After">
+                    <div class="gallery-overlay">
+                        <span>Cavity & Gum Treatment</span>
+                        <p>Healthy gums restored</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Fullscreen Overlay Modal -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay" onclick="closeFullscreen()">
+        <div class="fullscreen-content">
+            <img src="" alt="Fullscreen View" id="fullscreenImage">
+            <button class="fullscreen-close" onclick="closeFullscreen()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our <span class="brand-accent">Patients Say</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"I was terrified of dentists for years. Dr. Sarah made me feel completely at ease. My smile has never looked better!"</p>
+                        <div class="testimonial-author"><strong>Fatima R.</strong><span>Cosmetic Treatment • 3 Years Patient</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"Got my Invisalign treatment here. The results are incredible. Professional team and state-of-the-art equipment."</p>
+                        <div class="testimonial-author"><strong>Ahmed K.</strong><span>Orthodontic Treatment</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"Emergency appointment on a Sunday! They saved my tooth. Can't thank Dr. Imran enough. Highly recommended."</p>
+                        <div class="testimonial-author"><strong>Zainab M.</strong><span>Emergency Care</span></div>
+                    </div>    
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"My kids actually love going to the dentist now! Dr. Ayesha is amazing with children. So patient and gentle."</p>
+                        <div class="testimonial-author"><strong>Usman T.</strong><span>Pediatric Dentistry</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+                        <p class="testimonial-text">"Got my dental implant done here. Painless procedure and the implant looks completely natural. Worth every rupee."</p>
+                        <div class="testimonial-author"><strong>Ali H.</strong><span>Dental Implant</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"The cost calculator on their website gave me an accurate estimate. Transparent pricing and excellent service!"</p>
+                        <div class="testimonial-author"><strong>Sana J.</strong><span>Teeth Whitening</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="brand-accent">Questions</span></h2>
+                <p class="section-description">Answers to common questions about our dental services.</p>
+            </div>
+            <div class="faq-container">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Do I need an appointment for a dental checkup?</button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Yes, we recommend booking an appointment in advance to minimize your waiting time. However, for dental emergencies, we offer same-day appointments.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">How often should I visit the dentist?</button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">We recommend visiting the dentist every 6 months for a routine checkup and cleaning. Regular visits help detect problems early and prevent serious dental issues.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Is teeth whitening safe?</button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Yes, professional teeth whitening performed by our certified dentists is completely safe. We use clinically proven whitening agents that protect your enamel.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">What payment options do you accept?</button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">We accept cash, all major debit/credit cards, and bank transfers. We also offer flexible installment plans for major treatments.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">How long does a dental implant procedure take?</button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">The implant placement surgery typically takes 1-2 hours. The complete process, including healing time and crown placement, takes 3-6 months.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Are braces painful?</button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Modern braces and clear aligners are much more comfortable than traditional options. You may experience mild discomfort for a few days after adjustments.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">What should I do in a dental emergency?</button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Call us immediately at +92 300 1234567. For severe pain, bleeding, or trauma, we offer same-day emergency appointments during clinic hours.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">Do you offer free consultations?</button>
+                        </h2>
+                        <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Yes! We offer free initial consultations including a basic oral examination and digital X-ray for new patients.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BOOKING ========== -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Appointment</span>
+                <h2 class="section-title">Book Your <span class="brand-accent">Visit</span></h2>
+                <p class="section-description">Schedule your appointment in 4 easy steps.</p>
+            </div>
+            <div class="booking-wizard" id="bookingWizard">
+                <div class="booking-steps">
+                    <div class="step active" data-step="1"><div class="step-number">1</div><span>Service</span></div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="2"><div class="step-number">2</div><span>Date & Time</span></div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="3"><div class="step-number">3</div><span>Details</span></div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="4"><div class="step-number">4</div><span>Confirm</span></div>
+                </div>
+
+                <div class="booking-step-content" id="step1Content">
+                    <h3>Select Your Service</h3>
+                    <div class="service-select-grid">
+                        <label class="service-option">
+                            <input type="radio" name="service" value="General Checkup & Cleaning">
+                            <div class="service-option-content"><i class="bi bi-heart-pulse"></i><strong>General Checkup</strong><span>₨ 1,500</span></div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service" value="Teeth Cleaning & Polishing">
+                            <div class="service-option-content"><i class="bi bi-stars"></i><strong>Teeth Cleaning</strong><span>₨ 2,500</span></div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service" value="Cosmetic Consultation">
+                            <div class="service-option-content"><i class="bi bi-palette"></i><strong>Cosmetic Consultation</strong><span>Free</span></div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service" value="Orthodontic Assessment">
+                            <div class="service-option-content"><i class="bi bi-grid-3x3-gap"></i><strong>Orthodontic Assessment</strong><span>₨ 1,000</span></div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service" value="Emergency Dental Care">
+                            <div class="service-option-content emergency"><i class="bi bi-exclamation-triangle-fill"></i><strong>Emergency Care</strong><span>Priority</span></div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service" value="Dental Implant Consultation">
+                            <div class="service-option-content"><i class="bi bi-hospital"></i><strong>Implant Consultation</strong><span>Free</span></div>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary-custom btn-lg mt-4" onclick="nextStep(2)">Continue <i class="bi bi-arrow-right ms-2"></i></button>
+                </div>
+
+                <div class="booking-step-content" id="step2Content" style="display:none;">
+                    <h3>Choose Date & Time</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="appointmentDate" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Time</label>
+                            <select class="form-select" id="appointmentTime">
+                                <option value="">Select a time slot</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="09:30">09:30 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="10:30">10:30 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="11:30">11:30 AM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="14:30">02:30 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="15:30">03:30 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="16:30">04:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-4">
+                        <button class="btn btn-outline-custom btn-lg" onclick="prevStep(1)">Back</button>
+                        <button class="btn btn-primary-custom btn-lg" onclick="nextStep(3)">Continue</button>
+                    </div>
+                </div>
+
+                <div class="booking-step-content" id="step3Content" style="display:none;">
+                    <h3>Your Details</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="patientName" required placeholder="Your full name">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" id="patientPhone" required placeholder="+92 300 1234567">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="patientEmail" placeholder="your@email.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Doctor</label>
+                            <select class="form-select" id="preferredDoctor">
+                                <option value="">No preference</option>
+                                <option value="Dr. Sarah Ahmed">Dr. Sarah Ahmed</option>
+                                <option value="Dr. Imran Khan">Dr. Imran Khan</option>
+                                <option value="Dr. Ayesha Malik">Dr. Ayesha Malik</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Additional Notes</label>
+                            <textarea class="form-control" id="patientNotes" rows="3" placeholder="Any specific concerns..."></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-4">
+                        <button class="btn btn-outline-custom btn-lg" onclick="prevStep(2)">Back</button>
+                        <button class="btn btn-primary-custom btn-lg" onclick="nextStep(4)">Review Booking</button>
+                    </div>
+                </div>
+
+                <div class="booking-step-content" id="step4Content" style="display:none;">
+                    <h3>Confirm Your Appointment</h3>
+                    <div class="booking-summary" id="bookingSummary"></div>
+                    <div class="d-flex gap-2 mt-4">
+                        <button class="btn btn-outline-custom btn-lg" onclick="prevStep(3)">Back</button>
+                        <button class="btn btn-primary-custom btn-lg" onclick="confirmBooking()"><i class="bi bi-check-circle me-2"></i> Confirm Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Contact</span>
+                <h2 class="section-title">Get In <span class="brand-accent">Touch</span></h2>
+                <p class="section-description">We're here to help. Reach out to us anytime.</p>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card">
+                        <div class="contact-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h4>Address</h4>
+                        <p>123 Main Boulevard,<br>Gulberg III, Lahore, Pakistan</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card">
+                        <div class="contact-card-icon"><i class="bi bi-telephone-fill"></i></div>
+                        <h4>Phone</h4>
+                        <p>+92 300 1234567<br>+92 42 1234567</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card">
+                        <div class="contact-card-icon"><i class="bi bi-envelope-fill"></i></div>
+                        <h4>Email</h4>
+                        <p>info@dentalign.pk<br>appointments@dentalign.pk</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card">
+                        <div class="contact-card-icon"><i class="bi bi-clock-fill"></i></div>
+                        <h4>Working Hours</h4>
+                        <p>Mon - Sat: 9 AM - 8 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps?q=Gulberg%20III%2C%20Lahore%2C%20Pakistan&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        <p class="form-subtitle">We'll get back to you within 24 hours.</p>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Your Name *</label>
+                                <input type="text" class="form-control" placeholder="Full name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Your Email *</label>
+                                <input type="email" class="form-control" placeholder="your@email.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-control" placeholder="What is this about?">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message *</label>
+                                <textarea class="form-control" rows="4" placeholder="Your message..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-custom btn-lg w-100">Send Message <i class="bi bi-send ms-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3>Dent<span class="brand-accent">Align</span></h3>
+                    <p>Premium dental care with cutting-edge technology and a gentle touch. Your smile is our priority.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="login.html">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">General Dentistry</a></li>
+                        <li><a href="#services">Cosmetic Dentistry</a></li>
+                        <li><a href="#services">Orthodontics</a></li>
+                        <li><a href="#services">Emergency Care</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for dental health tips and exclusive offers.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DentAlign. All rights reserved. | Built by Saira Sehar for CloudExify Internship</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== EMERGENCY MODAL ========== -->
+    <div class="modal fade" id="emergencyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-exclamation-triangle-fill me-2"></i>Dental Emergency</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>If you're experiencing a dental emergency, please call us immediately:</p>
+                    <a href="tel:+923001234567" class="btn btn-danger btn-lg w-100 mb-3"><i class="bi bi-telephone-fill me-2"></i> Call Now: +92 300 1234567</a>
+                    <p class="text-center">Or visit our clinic directly:</p>
+                    <p class="text-center"><strong>123 Main Boulevard, Gulberg III, Lahore</strong></p>
+                    <p class="text-center text-muted">Open Mon-Sat: 9 AM - 8 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SUCCESS MODAL ========== -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body py-5">
+                    <div class="success-icon mb-3"><i class="bi bi-check-circle-fill"></i></div>
+                    <h3>Booking Confirmed!</h3>
+                    <p>Your appointment has been scheduled successfully. You'll receive a confirmation SMS and email shortly.</p>
+                    <button class="btn btn-primary-custom" data-bs-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
