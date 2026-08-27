@@ -39,9 +39,8 @@ Design Style:  Premium Medical + Modern Tech
 LIVE DEMO
 ────────────────────────────────────────────────────────────
 
-Visit the live site: https://dentalign.vercel.app
+Visit the live site: https://cloud-exify-project-3-xi.vercel.app/
 
-Admin Panel: https://dentalign.vercel.app/admin.html
 Password: admin123
 
 
@@ -300,20 +299,6 @@ No JavaScript errors in console              PASSED
 
 
 
-SCREENSHOTS
-────────────────────────────────────────────────────────────
-
-Desktop View:
-screenshots/desktop.png
-
-Mobile View:
-screenshots/mobile.png
-
-Admin Panel:
-screenshots/admin.png
-
-
-
 SUPABASE INTEGRATION (READY)
 ────────────────────────────────────────────────────────────
 
@@ -372,5 +357,5 @@ Planned improvements for future versions:
 ══════════════════════════════════════════════════════════════
   Built by Saira Sehar — CloudExify Internship 2026
   GitHub: https://github.com/Saira-Sehar
-  LinkedIn: https://www.linkedin.com/in/saira-sehar-6b474b205
+  LinkedIn: https://www.linkedin.com/in/saira-sehar
 ══════════════════════════════════════════════════════════════
